@@ -1,0 +1,64 @@
+---
+// Header component with navigation
+---
+
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 transition-all" id="nav">
+  <div class="max-w-6xl mx-auto px-6 flex items-center justify-between py-4">
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-2 text-xl font-bold text-primary">
+      <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+        <path d="M16 6L16 16L24 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="16" cy="16" r="3" fill="currentColor"/>
+      </svg>
+      <span>TravelOps</span>
+    </a>
+    
+    <!-- Mobile Toggle -->
+    <button class="md:hidden flex flex-col gap-1.5 p-2" id="navToggle" aria-label="Toggle navigation">
+      <span class="block w-6 h-0.5 bg-gray-700 transition-all"></span>
+      <span class="block w-6 h-0.5 bg-gray-700 transition-all"></span>
+      <span class="block w-6 h-0.5 bg-gray-700 transition-all"></span>
+    </button>
+    
+    <!-- Navigation Menu -->
+    <div class="hidden md:flex items-center gap-8" id="navMenu">
+      <a href="#platform" class="text-sm font-medium text-gray-700 hover:text-accent transition-colors">Platform</a>
+      <a href="#pillars" class="text-sm font-medium text-gray-700 hover:text-accent transition-colors">Modules</a>
+      <a href="#gear" class="text-sm font-medium text-gray-700 hover:text-accent transition-colors">Gear Management</a>
+      <a href="#roles" class="text-sm font-medium text-gray-700 hover:text-accent transition-colors">For Your Role</a>
+      <a href="#demo" class="px-5 py-2 bg-accent text-white rounded-md font-semibold hover:bg-accent-dark transition-colors">
+        Request Demo
+      </a>
+    </div>
+  </div>
+  
+  <!-- Mobile Menu -->
+  <div class="md:hidden hidden fixed top-16 left-0 right-0 bottom-0 bg-white p-8 flex flex-col gap-6" id="mobileMenu">
+    <a href="#platform" class="text-lg font-medium text-gray-700">Platform</a>
+    <a href="#pillars" class="text-lg font-medium text-gray-700">Modules</a>
+    <a href="#gear" class="text-lg font-medium text-gray-700">Gear Management</a>
+    <a href="#roles" class="text-lg font-medium text-gray-700">For Your Role</a>
+    <a href="#demo" class="px-6 py-3 bg-accent text-white rounded-md font-semibold text-center">
+      Request Demo
+    </a>
+  </div>
+</nav>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  
+  navToggle?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+    document.body.style.overflow = mobileMenu?.classList.contains('hidden') ? '' : 'hidden';
+  });
+  
+  // Close on link click
+  mobileMenu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      document.body.style.overflow = '';
+    });
+  });
+</script>

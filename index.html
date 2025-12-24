@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TravelOps - The Operating System for Travel Businesses. Replace Excel chaos and WhatsApp confusion with one unified platform for leads, bookings, staff, gear, and vendors.">
+    <meta name="keywords" content="travel ERP, tour management software, trek operations, adventure business software, travel CRM, booking management">
+    <meta name="author" content="TravelOps">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="TravelOps - The Operating System for Travel Businesses">
+    <meta property="og:description" content="One platform to manage your tours, team, leads, gear, and finances. Built for travel operators who refuse to run their business on spreadsheets.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://travelops.io">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>TravelOps - The Operating System for Travel Businesses</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <svg class="nav-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                    <path d="M16 6L16 16L24 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="16" cy="16" r="3" fill="currentColor"/>
+                </svg>
+                <span>TravelOps</span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#platform" class="nav-link">Platform</a>
+                <a href="#pillars" class="nav-link">Modules</a>
+                <a href="#gear" class="nav-link">Gear Management</a>
+                <a href="#roles" class="nav-link">For Your Role</a>
+                <a href="#demo" class="nav-link nav-link-cta">Request Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    The Operating System<br>
+                    <span class="hero-title-accent">for Travel Businesses</span>
+                </h1>
+                <p class="hero-subtitle">
+                    One platform connecting your leads, bookings, staff, gear, vendors, and money. 
+                    Built for tour operators, trek companies, and adventure businesses 
+                    who refuse to run their operations on spreadsheets.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#demo" class="btn btn-primary btn-lg">Request Demo</a>
+                    <a href="#flow" class="btn btn-secondary btn-lg">See How It Works</a>
+                </div>
+                <p class="hero-note">
+                    For companies running 50–5,000 trips per year
+                </p>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="operations-hub">
+                    <div class="hub-center">
+                        <div class="hub-core">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="24" cy="24" r="12" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="24" cy="24" r="4" fill="currentColor"/>
+                            </svg>
+                            <span>Your Operations</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hub-node hub-node-1">
+                        <div class="hub-node-icon">📋</div>
+                        <span>Leads</span>
+                    </div>
+                    <div class="hub-node hub-node-2">
+                        <div class="hub-node-icon">📅</div>
+                        <span>Bookings</span>
+                    </div>
+                    <div class="hub-node hub-node-3">
+                        <div class="hub-node-icon">👥</div>
+                        <span>Staff</span>
+                    </div>
+                    <div class="hub-node hub-node-4">
+                        <div class="hub-node-icon">⛺</div>
+                        <span>Gear</span>
+                    </div>
+                    <div class="hub-node hub-node-5">
+                        <div class="hub-node-icon">🤝</div>
+                        <span>Vendors</span>
+                    </div>
+                    <div class="hub-node hub-node-6">
+                        <div class="hub-node-icon">💰</div>
+                        <span>Finance</span>
+                    </div>
+                    
+                    <svg class="hub-connections" viewBox="0 0 400 400">
+                        <line x1="200" y1="200" x2="200" y2="50" class="connection-line"/>
+                        <line x1="200" y1="200" x2="330" y2="115" class="connection-line"/>
+                        <line x1="200" y1="200" x2="330" y2="285" class="connection-line"/>
+                        <line x1="200" y1="200" x2="200" y2="350" class="connection-line"/>
+                        <line x1="200" y1="200" x2="70" y2="285" class="connection-line"/>
+                        <line x1="200" y1="200" x2="70" y2="115" class="connection-line"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Chaos Problem -->
+    <section class="section section-dark" id="chaos">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">The Reality You Know Too Well</p>
+                <h2 class="section-title">Your Operations Are Held Together<br>by WhatsApp and Willpower</h2>
+            </div>
+            
+            <div class="chaos-grid">
+                <div class="chaos-card">
+                    <div class="chaos-icon">💬</div>
+                    <h3>Leads in WhatsApp</h3>
+                    <p>Enquiries scattered across 4 phones. No one knows who followed up on what. Leads go cold in chat history.</p>
+                </div>
+                
+                <div class="chaos-card">
+                    <div class="chaos-icon">📊</div>
+                    <h3>Bookings in Excel</h3>
+                    <p>12 different spreadsheets. Version conflicts. Someone just deleted the wrong row. "Which file is the latest?"</p>
+                </div>
+                
+                <div class="chaos-card">
+                    <div class="chaos-icon">📞</div>
+                    <h3>Staff on Phone Calls</h3>
+                    <p>"Who's free next week?" requires 6 calls. Guide availability lives in someone's head. Double-bookings happen.</p>
+                </div>
+                
+                <div class="chaos-card">
+                    <div class="chaos-icon">🎒</div>
+                    <h3>Gear Gone Missing</h3>
+                    <p>Tents not returned. Sleeping bags in unknown condition. ₹50,000 of equipment "somewhere" after last trek.</p>
+                </div>
+                
+                <div class="chaos-card">
+                    <div class="chaos-icon">🧾</div>
+                    <h3>Vendor Bills in Chaos</h3>
+                    <p>Which driver was paid? What's pending for the hotel? Settlements are guesswork. Cash flow is a mystery.</p>
+                </div>
+                
+                <div class="chaos-card">
+                    <div class="chaos-icon">🔥</div>
+                    <h3>Peak Season Panic</h3>
+                    <p>Everything works until it doesn't. One sick guide. One oversold departure. The system breaks at the worst moment.</p>
+                </div>
+            </div>
+            
+            <div class="chaos-transition">
+                <p class="chaos-statement">
+                    This isn't a technology problem.<br>
+                    <strong>It's an operations architecture problem.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Platform Concept -->
+    <section class="section" id="platform">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">A Different Kind of System</p>
+                <h2 class="section-title">Not a CRM. Not a Booking Tool.<br>An Operations Platform.</h2>
+            </div>
+            
+            <div class="platform-content">
+                <div class="platform-explanation">
+                    <p class="platform-lead">
+                        TravelOps is an <strong>internal operations ERP</strong> designed specifically for travel businesses. 
+                        It's the single system where your leads, bookings, inventory, staff, gear, vendors, and finances 
+                        live together — connected, real-time, and under your control.
+                    </p>
+                    
+                    <div class="platform-points">
+                        <div class="platform-point">
+                            <div class="point-icon">✓</div>
+                            <div class="point-content">
+                                <strong>Not a booking widget</strong> for your website — this is your back-office brain
+                            </div>
+                        </div>
+                        <div class="platform-point">
+                            <div class="point-icon">✓</div>
+                            <div class="point-content">
+                                <strong>Not just a CRM</strong> — leads flow into bookings flow into operations
+                            </div>
+                        </div>
+                        <div class="platform-point">
+                            <div class="point-icon">✓</div>
+                            <div class="point-content">
+                                <strong>Not a generic ERP</strong> — built for treks, tours, and adventure operations
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="platform-diagram">
+                    <div class="system-architecture">
+                        <div class="arch-layer arch-layer-top">
+                            <span class="arch-label">Customer Layer</span>
+                            <div class="arch-items">
+                                <div class="arch-item">Leads & Enquiries</div>
+                                <div class="arch-item">Bookings & Payments</div>
+                                <div class="arch-item">Communication</div>
+                            </div>
+                        </div>
+                        
+                        <div class="arch-connector">
+                            <svg viewBox="0 0 200 30" fill="none">
+                                <path d="M0 15 L200 15" stroke="currentColor" stroke-width="1" stroke-dasharray="4"/>
+                                <path d="M100 0 L100 30" stroke="currentColor" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="arch-layer arch-layer-middle">
+                            <span class="arch-label">Operations Core</span>
+                            <div class="arch-items">
+                                <div class="arch-item arch-item-primary">Inventory & Departures</div>
+                                <div class="arch-item arch-item-primary">Staff & Assignments</div>
+                                <div class="arch-item arch-item-primary">Gear & Equipment</div>
+                            </div>
+                        </div>
+                        
+                        <div class="arch-connector">
+                            <svg viewBox="0 0 200 30" fill="none">
+                                <path d="M0 15 L200 15" stroke="currentColor" stroke-width="1" stroke-dasharray="4"/>
+                                <path d="M100 0 L100 30" stroke="currentColor" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="arch-layer arch-layer-bottom">
+                            <span class="arch-label">Business Layer</span>
+                            <div class="arch-items">
+                                <div class="arch-item">Vendor Settlements</div>
+                                <div class="arch-item">Payroll & HRMS</div>
+                                <div class="arch-item">Analytics & Reports</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Operational Pillars -->
+    <section class="section section-alt" id="pillars">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Seven Connected Pillars</p>
+                <h2 class="section-title">Every Part of Your Business,<br>Finally in One System</h2>
+            </div>
+            
+            <div class="pillars-grid">
+                <article class="pillar-card">
+                    <div class="pillar-number">01</div>
+                    <h3 class="pillar-title">CRM & Lead Management</h3>
+                    <p class="pillar-problem">
+                        <strong>The problem:</strong> Enquiries arrive on WhatsApp, email, website, phone. 
+                        They get lost, go cold, or get followed up by three different people.
+                    </p>
+                    <p class="pillar-solution">
+                        <strong>Now:</strong> Every lead in one pipeline. See who's following up. 
+                        Track the journey from first message to confirmed booking. 
+                        Never lose a ₹2 lakh trek enquiry in chat history again.
+                    </p>
+                </article>
+                
+                <article class="pillar-card">
+                    <div class="pillar-number">02</div>
+                    <h3 class="pillar-title">Booking Engine</h3>
+                    <p class="pillar-problem">
+                        <strong>The problem:</strong> Bookings scattered across spreadsheets. 
+                        Payment status unclear. Guest details in different places.
+                    </p>
+                    <p class="pillar-solution">
+                        <strong>Now:</strong> One booking record, everything attached — payments, documents, 
+                        special requests, communication history. From draft to completed trip, 
+                        full visibility.
+                    </p>
+                </article>
+                
+                <article class="pillar-card">
+                    <div class="pillar-number">03</div>
+                    <h3 class="pillar-title">Inventory & Departures</h3>
+                    <p class="pillar-problem">
+                        <strong>The problem:</strong> "How many seats left on the Dec 15 departure?" 
+                        requires checking three files and calling the operations manager.
+                    </p>
+                    <p class="pillar-solution">
+                        <strong>Now:</strong> Real-time seat availability. Automatic status updates. 
+                        Hold management for pending payments. Overbooking prevention. 
+                        Waitlist automation.
+                    </p>
+                </article>
+                
+                <article class="pillar-card pillar-card-featured">
+                    <div class="pillar-number">04</div>
+                    <h3 class="pillar-title">Gear Management</h3>
+                    <p class="pillar-problem">
+                        <strong>The problem:</strong> Expensive equipment disappears after trips. 
+                        Damaged gear gets sent out. No one knows what's where.
+                    </p>
+                    <p class="pillar-solution">
+                        <strong>Now:</strong> Every tent, sleeping bag, and harness tracked. 
+                        Assigned per trip. Condition inspected on return. 
+                        Maintenance scheduled. Rentals managed. No more ₹5 lakh annual gear loss.
+                    </p>
+                    <a href="#gear" class="pillar-link">Deep dive into Gear Management →</a>
+                </article>
+                
+                <article class="pillar-card">
+                    <div class="pillar-number">05</div>
+                    <h3 class="pillar-title">HRMS & Staff Operations</h3>
+                    <p class="pillar-problem">
+                        <strong>The problem:</strong> "Is Rajesh available for the Annapurna trip?" 
+                        Who knows his leave balance? What's his pay for last month?
+                    </p>
+                    <p class="pillar-solution">
+                        <strong>Now:</strong> Staff availability calendar. Trip assignments with acceptance. 
+                        Attendance from the field. Payroll with trip incentives. 
+                        Leave management that knows about scheduled departures.
+                    </p>
+                </article>
+                
+                <article class="pillar-card">
+                    <div class="pillar-number">06</div>
+                    <h3 class="pillar-title">Vendor & Supplier Management</h3>
+                    <p class="pillar-problem">
+                        <strong>The problem:</strong> Which vehicle vendor is reliable? 
+                        What's pending to the Lukla hotel? Cash flows out with no trail.
+                    </p>
+                    <p class="pillar-solution">
+                        <strong>Now:</strong> Vendor profiles with performance history. 
+                        Automated payable generation per booking. Settlement tracking. 
+                        Know exactly who owes what, and why.
+                    </p>
+                </article>
+                
+                <article class="pillar-card">
+                    <div class="pillar-number">07</div>
+                    <h3 class="pillar-title">WhatsApp Operations</h3>
+                    <p class="pillar-problem">
+                        <strong>The problem:</strong> WhatsApp is where business happens — 
+                        but it's also where information goes to die.
+                    </p>
+                    <p class="pillar-solution">
+                        <strong>Now:</strong> WhatsApp messages linked to bookings. 
+                        Automated confirmations and reminders. Field staff check-ins via chat. 
+                        The conversation becomes part of the record.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gear Management Deep Dive -->
+    <section class="section section-dark" id="gear">
+        <div class="container">
+            <div class="gear-header">
+                <p class="section-label">What No Other ERP Does</p>
+                <h2 class="section-title">Gear Management That<br>Saves Money and Prevents Disasters</h2>
+                <p class="gear-subtitle">
+                    For adventure and trek operators, equipment isn't inventory — 
+                    it's safety, reputation, and a massive hidden cost center. 
+                    We built an entire module for this.
+                </p>
+            </div>
+            
+            <div class="gear-features">
+                <div class="gear-feature">
+                    <div class="gear-feature-visual">
+                        <div class="gear-tracking-demo">
+                            <div class="gear-item-card">
+                                <span class="gear-tag gear-tag-available">Available</span>
+                                <div class="gear-item-name">4-Season Tent #TST-042</div>
+                                <div class="gear-item-meta">
+                                    <span>Condition: Excellent</span>
+                                    <span>Warehouse: Kathmandu HQ</span>
+                                </div>
+                            </div>
+                            <div class="gear-item-card">
+                                <span class="gear-tag gear-tag-assigned">On Trip</span>
+                                <div class="gear-item-name">Sleeping Bag -20°C #SLB-089</div>
+                                <div class="gear-item-meta">
+                                    <span>Assigned: EBC Trek Dec 15</span>
+                                    <span>Return: Dec 28</span>
+                                </div>
+                            </div>
+                            <div class="gear-item-card">
+                                <span class="gear-tag gear-tag-maintenance">Maintenance</span>
+                                <div class="gear-item-name">Climbing Harness #CLH-023</div>
+                                <div class="gear-item-meta">
+                                    <span>Issue: Buckle repair</span>
+                                    <span>Due: Dec 20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gear-feature-content">
+                        <h3>Every Item, Tracked and Visible</h3>
+                        <p>
+                            Know the location, condition, and assignment status of every piece of equipment. 
+                            From tents to carabiners, nothing gets lost in the chaos of back-to-back trips.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="gear-feature gear-feature-reverse">
+                    <div class="gear-feature-visual">
+                        <div class="assignment-flow">
+                            <div class="assignment-step">
+                                <div class="assignment-icon">📋</div>
+                                <span>Trip Created</span>
+                            </div>
+                            <div class="assignment-arrow">→</div>
+                            <div class="assignment-step">
+                                <div class="assignment-icon">⛺</div>
+                                <span>Gear Assigned</span>
+                            </div>
+                            <div class="assignment-arrow">→</div>
+                            <div class="assignment-step">
+                                <div class="assignment-icon">✅</div>
+                                <span>Checked Out</span>
+                            </div>
+                            <div class="assignment-arrow">→</div>
+                            <div class="assignment-step">
+                                <div class="assignment-icon">🔍</div>
+                                <span>Returned & Inspected</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gear-feature-content">
+                        <h3>Trip-Based Assignments</h3>
+                        <p>
+                            Assign gear to specific departures. Track what went out, what came back, 
+                            and in what condition. The system knows exactly which tent was on which trek.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="gear-feature">
+                    <div class="gear-feature-visual">
+                        <div class="condition-grid">
+                            <div class="condition-item condition-excellent">
+                                <span class="condition-label">Excellent</span>
+                                <span class="condition-count">42 items</span>
+                            </div>
+                            <div class="condition-item condition-good">
+                                <span class="condition-label">Good</span>
+                                <span class="condition-count">38 items</span>
+                            </div>
+                            <div class="condition-item condition-fair">
+                                <span class="condition-label">Fair</span>
+                                <span class="condition-count">21 items</span>
+                            </div>
+                            <div class="condition-item condition-poor">
+                                <span class="condition-label">Poor</span>
+                                <span class="condition-count">8 items</span>
+                            </div>
+                            <div class="condition-item condition-unsafe">
+                                <span class="condition-label">Unsafe</span>
+                                <span class="condition-count">2 items</span>
+                                <span class="condition-alert">⚠️ Action Required</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gear-feature-content">
+                        <h3>Condition Tracking & Safety Alerts</h3>
+                        <p>
+                            Rate equipment condition after every trip. Damaged items get flagged instantly. 
+                            Unsafe gear triggers immediate alerts. 
+                            Never send a guest up the mountain with compromised equipment.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="gear-feature gear-feature-reverse">
+                    <div class="gear-feature-visual">
+                        <div class="rental-preview">
+                            <div class="rental-card">
+                                <div class="rental-header">Guest Rental</div>
+                                <div class="rental-guest">Sarah Mitchell</div>
+                                <div class="rental-items">
+                                    <span>Sleeping Bag × 1</span>
+                                    <span>Trekking Poles × 1</span>
+                                    <span>Down Jacket × 1</span>
+                                </div>
+                                <div class="rental-total">
+                                    <span>Rental Fee:</span>
+                                    <strong>₹2,400</strong>
+                                </div>
+                                <div class="rental-deposit">
+                                    <span>Security Deposit:</span>
+                                    <strong>₹5,000</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gear-feature-content">
+                        <h3>Integrated Rental Management</h3>
+                        <p>
+                            Guests renting gear? Track agreements, calculate fees, manage deposits, 
+                            and assess return condition — all linked to the booking. 
+                            Turn your gear inventory into a revenue stream.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gear-impact">
+                <div class="impact-stat">
+                    <span class="impact-number">₹5L+</span>
+                    <span class="impact-label">Average annual gear loss prevented</span>
+                </div>
+                <div class="impact-stat">
+                    <span class="impact-number">100%</span>
+                    <span class="impact-label">Equipment accountability per trip</span>
+                </div>
+                <div class="impact-stat">
+                    <span class="impact-number">Zero</span>
+                    <span class="impact-label">Safety incidents from equipment failure</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End-to-End Operational Flow -->
+    <section class="section" id="flow">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">The Complete Picture</p>
+                <h2 class="section-title">From First Enquiry to Final Settlement,<br>One Unbroken Flow</h2>
+            </div>
+            
+            <!-- Phase Legend -->
+            <div class="flow-phases">
+                <div class="flow-phase-label">
+                    <span class="flow-phase-dot customer"></span>
+                    <span>Customer Journey</span>
+                </div>
+                <div class="flow-phase-label">
+                    <span class="flow-phase-dot ops"></span>
+                    <span>Operations</span>
+                </div>
+                <div class="flow-phase-label">
+                    <span class="flow-phase-dot execution"></span>
+                    <span>Trip Execution</span>
+                </div>
+                <div class="flow-phase-label">
+                    <span class="flow-phase-dot finance"></span>
+                    <span>Finance</span>
+                </div>
+            </div>
+            
+            <div class="flow-diagram">
+                <div class="flow-container">
+                    <div class="flow-step flow-step-customer">
+                        <div class="flow-step-card">
+                            <div class="flow-step-icon">💬</div>
+                            <div class="flow-step-content">
+                                <h4>Lead Captured</h4>
+                                <p>Enquiry arrives via WhatsApp, website, email, or referral. Auto-tracked in CRM.</p>
+                            </div>
+                            <span class="flow-step-number">1</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step flow-step-customer">
+                        <div class="flow-step-card">
+                            <div class="flow-step-icon">📋</div>
+                            <div class="flow-step-content">
+                                <h4>Lead Nurtured</h4>
+                                <p>Pipeline stages, follow-ups, quotes sent, questions answered until ready to book.</p>
+                            </div>
+                            <span class="flow-step-number">2</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step flow-step-ops">
+                        <div class="flow-step-card">
+                            <div class="flow-step-icon">📅</div>
+                            <div class="flow-step-content">
+                                <h4>Booking Created</h4>
+                                <p>Lead converts with one click. Departure selected. Seats reserved automatically.</p>
+                            </div>
+                            <span class="flow-step-number">3</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step flow-step-ops">
+                        <div class="flow-step-card">
+                            <div class="flow-step-icon">💳</div>
+                            <div class="flow-step-content">
+                                <h4>Payment Collected</h4>
+                                <p>Full or partial payments tracked. Status updates automatically. Seat confirmed.</p>
+                            </div>
+                            <span class="flow-step-number">4</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step flow-step-ops">
+                        <div class="flow-step-card">
+                            <div class="flow-step-icon">📦</div>
+                            <div class="flow-step-content">
+                                <h4>Inventory Updated</h4>
+                                <p>Departure capacity reflects confirmed bookings. Waitlist managed in real-time.</p>
+                            </div>
+                            <span class="flow-step-number">5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step flow-step-execution">
+                        <div class="flow-step-card">
+                            <div class="flow-step-icon">👥</div>
+                            <div class="flow-step-content">
+                                <h4>Staff Assigned</h4>
+                                <p>Guide, driver, cook allocated based on skills. They accept assignments via app.</p>
+                            </div>
+                            <span class="flow-step-number">6</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step flow-step-execution">
+                        <div class="flow-step-card">
+                            <div class="flow-step-icon">⛺</div>
+                            <div class="flow-step-content">
+                                <h4>Gear Assigned</h4>
+                                <p>Equipment checked out. Tracked per trip. Return dates set with reminders.</p>
+                            </div>
+                            <span class="flow-step-number">7</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step flow-step-execution">
+                        <div class="flow-step-card">
+                            <div class="flow-step-icon">🚐</div>
+                            <div class="flow-step-content">
+                                <h4>Vendors Assigned</h4>
+                                <p>Transport, hotels, services linked to departure. Payables auto-generated.</p>
+                            </div>
+                            <span class="flow-step-number">8</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step flow-step-execution">
+                        <div class="flow-step-card">
+                            <div class="flow-step-icon">🏔️</div>
+                            <div class="flow-step-content">
+                                <h4>Trip Executes</h4>
+                                <p>Field check-ins via WhatsApp. Status updates. Real-time visibility for all.</p>
+                            </div>
+                            <span class="flow-step-number">9</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step flow-step-finance">
+                        <div class="flow-step-card">
+                            <div class="flow-step-icon">✅</div>
+                            <div class="flow-step-content">
+                                <h4>Trip Completed</h4>
+                                <p>Gear returned and inspected. Attendance recorded. Issues logged if any.</p>
+                            </div>
+                            <span class="flow-step-number">10</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step flow-step-finance">
+                        <div class="flow-step-card">
+                            <div class="flow-step-icon">💰</div>
+                            <div class="flow-step-content">
+                                <h4>Settlements Done</h4>
+                                <p>Vendors paid. Staff payroll processed. Trip profit automatically calculated.</p>
+                            </div>
+                            <span class="flow-step-number">11</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="flow-note">
+                <strong>Every step connected. Every action recorded.</strong><br>No spreadsheet in sight.
+            </p>
+        </div>
+    </section>
+    <!-- Role-Based Dashboards -->
+    <section class="section section-alt" id="roles">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Built for Every Role</p>
+                <h2 class="section-title">The Right Information<br>for the Right Person</h2>
+                <p class="section-description">
+                    Everyone sees what they need. No one drowns in data that isn't relevant to their work.
+                </p>
+            </div>
+            
+            <div class="roles-showcase">
+                <div class="roles-tabs" role="tablist">
+                    <button class="role-tab active" role="tab" data-role="owner" aria-selected="true">
+                        <span class="role-tab-icon">👔</span>
+                        <span class="role-tab-label">Owner / Founder</span>
+                    </button>
+                    <button class="role-tab" role="tab" data-role="sales" aria-selected="false">
+                        <span class="role-tab-icon">📞</span>
+                        <span class="role-tab-label">Sales Team</span>
+                    </button>
+                    <button class="role-tab" role="tab" data-role="ops" aria-selected="false">
+                        <span class="role-tab-icon">⚙️</span>
+                        <span class="role-tab-label">Operations</span>
+                    </button>
+                    <button class="role-tab" role="tab" data-role="finance" aria-selected="false">
+                        <span class="role-tab-icon">💹</span>
+                        <span class="role-tab-label">Finance</span>
+                    </button>
+                    <button class="role-tab" role="tab" data-role="field" aria-selected="false">
+                        <span class="role-tab-icon">🏔️</span>
+                        <span class="role-tab-label">Field Staff</span>
+                    </button>
+                </div>
+                
+                <div class="roles-content">
+                    <div class="role-panel active" id="role-owner">
+                        <div class="dashboard-preview">
+                            <div class="dashboard-header">
+                                <span>Owner Dashboard</span>
+                                <span class="dashboard-date">December 2024</span>
+                            </div>
+                            <div class="dashboard-metrics">
+                                <div class="metric-card">
+                                    <span class="metric-value">₹42.5L</span>
+                                    <span class="metric-label">Revenue This Month</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-value">89%</span>
+                                    <span class="metric-label">Departure Fill Rate</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-value">23</span>
+                                    <span class="metric-label">Active Trips</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-value">94%</span>
+                                    <span class="metric-label">Staff Utilization</span>
+                                </div>
+                            </div>
+                            <div class="dashboard-alerts">
+                                <div class="alert-item alert-warning">3 departures at capacity — consider adding dates</div>
+                                <div class="alert-item alert-info">₹8.2L pending vendor settlements this week</div>
+                            </div>
+                        </div>
+                        <div class="role-description">
+                            <h3>See the health of your entire business at a glance</h3>
+                            <p>
+                                Revenue trends. Booking velocity. Staff costs. Vendor payables. 
+                                The numbers that matter for growth decisions — without digging through 12 reports.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="role-panel" id="role-sales">
+                        <div class="dashboard-preview">
+                            <div class="dashboard-header">
+                                <span>Sales Dashboard</span>
+                                <span class="dashboard-date">My Pipeline</span>
+                            </div>
+                            <div class="dashboard-metrics">
+                                <div class="metric-card">
+                                    <span class="metric-value">47</span>
+                                    <span class="metric-label">Active Leads</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-value">₹18.3L</span>
+                                    <span class="metric-label">Pipeline Value</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-value">8</span>
+                                    <span class="metric-label">Follow-ups Today</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-value">32%</span>
+                                    <span class="metric-label">Conversion Rate</span>
+                                </div>
+                            </div>
+                            <div class="dashboard-alerts">
+                                <div class="alert-item alert-urgent">2 hot leads waiting for quote > 24 hours</div>
+                                <div class="alert-item alert-info">5 leads ready for follow-up today</div>
+                            </div>
+                        </div>
+                        <div class="role-description">
+                            <h3>Never let a lead go cold again</h3>
+                            <p>
+                                Your leads, your pipeline, your follow-ups. See what needs attention today. 
+                                Know exactly where every enquiry stands without checking WhatsApp history.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="role-panel" id="role-ops">
+                        <div class="dashboard-preview">
+                            <div class="dashboard-header">
+                                <span>Operations Dashboard</span>
+                                <span class="dashboard-date">This Week</span>
+                            </div>
+                            <div class="dashboard-metrics">
+                                <div class="metric-card">
+                                    <span class="metric-value">12</span>
+                                    <span class="metric-label">Departures This Week</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-value">156</span>
+                                    <span class="metric-label">Guests in Field</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-value">3</span>
+                                    <span class="metric-label">Pending Staff Assignments</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-value">98%</span>
+                                    <span class="metric-label">Gear Ready</span>
+                                </div>
+                            </div>
+                            <div class="dashboard-alerts">
+                                <div class="alert-item alert-warning">Dec 18 departure needs cook assignment</div>
+                                <div class="alert-item alert-info">4 gear items returning tomorrow</div>
+                            </div>
+                        </div>
+                        <div class="role-description">
+                            <h3>Execution clarity for every trip</h3>
+                            <p>
+                                What's departing. Who's assigned. What gear is out. 
+                                The operational picture that lets you catch problems before they become emergencies.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="role-panel" id="role-finance">
+                        <div class="dashboard-preview">
+                            <div class="dashboard-header">
+                                <span>Finance Dashboard</span>
+                                <span class="dashboard-date">December 2024</span>
+                            </div>
+                            <div class="dashboard-metrics">
+                                <div class="metric-card">
+                                    <span class="metric-value">₹12.8L</span>
+                                    <span class="metric-label">Pending Collections</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-value">₹8.2L</span>
+                                    <span class="metric-label">Vendor Payables</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-value">₹4.1L</span>
+                                    <span class="metric-label">Staff Payroll Due</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-value">28%</span>
+                                    <span class="metric-label">Avg. Trip Margin</span>
+                                </div>
+                            </div>
+                            <div class="dashboard-alerts">
+                                <div class="alert-item alert-urgent">3 bookings overdue for payment > 7 days</div>
+                                <div class="alert-item alert-info">Payroll processing due in 5 days</div>
+                            </div>
+                        </div>
+                        <div class="role-description">
+                            <h3>Cash flow visibility without the chaos</h3>
+                            <p>
+                                What's coming in. What's going out. Who owes what. 
+                                Vendor settlements, payroll status, and collection tracking in one place.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="role-panel" id="role-field">
+                        <div class="dashboard-preview dashboard-preview-mobile">
+                            <div class="dashboard-header">
+                                <span>My Assignments</span>
+                                <span class="dashboard-date">Rajesh Kumar</span>
+                            </div>
+                            <div class="field-assignments">
+                                <div class="field-trip">
+                                    <div class="field-trip-name">EBC Trek — Dec 15-28</div>
+                                    <div class="field-trip-status">In Progress</div>
+                                    <div class="field-trip-guests">12 guests</div>
+                                </div>
+                                <div class="field-trip field-trip-upcoming">
+                                    <div class="field-trip-name">Annapurna Circuit — Jan 5-18</div>
+                                    <div class="field-trip-status">Confirmed</div>
+                                    <div class="field-trip-guests">8 guests</div>
+                                </div>
+                            </div>
+                            <div class="field-actions">
+                                <button class="field-action-btn">📍 Check In</button>
+                                <button class="field-action-btn">📝 Log Update</button>
+                            </div>
+                        </div>
+                        <div class="role-description">
+                            <h3>Simple, mobile-first for the field</h3>
+                            <p>
+                                Guides and drivers see their assignments. Check in from anywhere. 
+                                Log updates. No complex interfaces — just what they need to do their job.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why This Replaces Multiple Tools -->
+    <section class="section" id="replace">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">The Real Comparison</p>
+                <h2 class="section-title">You're Already Paying for This.<br>Just in Chaos, Not Software.</h2>
+            </div>
+            
+            <div class="comparison-table">
+                <div class="comparison-row comparison-header">
+                    <div class="comparison-cell">What You're Doing Now</div>
+                    <div class="comparison-cell">The Hidden Cost</div>
+                    <div class="comparison-cell">With TravelOps</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell">
+                        <strong>Leads in WhatsApp</strong>
+                        <span>Scattered across personal phones</span>
+                    </div>
+                    <div class="comparison-cell comparison-cost">
+                        20-30% leads lost annually
+                    </div>
+                    <div class="comparison-cell comparison-solution">
+                        Unified pipeline with ownership
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell">
+                        <strong>Bookings in Excel</strong>
+                        <span>Multiple files, version chaos</span>
+                    </div>
+                    <div class="comparison-cell comparison-cost">
+                        Hours of reconciliation weekly
+                    </div>
+                    <div class="comparison-cell comparison-solution">
+                        Single source of truth
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell">
+                        <strong>Inventory in Head</strong>
+                        <span>Ops manager is the system</span>
+                    </div>
+                    <div class="comparison-cell comparison-cost">
+                        Overbookings, underselling
+                    </div>
+                    <div class="comparison-cell comparison-solution">
+                        Real-time seat visibility
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell">
+                        <strong>Staff Scheduling via Calls</strong>
+                        <span>Phone tag for every trip</span>
+                    </div>
+                    <div class="comparison-cell comparison-cost">
+                        4-6 hours per week, conflicts
+                    </div>
+                    <div class="comparison-cell comparison-solution">
+                        Availability calendar, assignments
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell">
+                        <strong>Gear Tracking (None)</strong>
+                        <span>"It's somewhere"</span>
+                    </div>
+                    <div class="comparison-cell comparison-cost">
+                        ₹3-5L annual loss, safety risk
+                    </div>
+                    <div class="comparison-cell comparison-solution">
+                        Full accountability per trip
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell">
+                        <strong>Vendor Payments in Diary</strong>
+                        <span>Cash out, unclear ledger</span>
+                    </div>
+                    <div class="comparison-cell comparison-cost">
+                        Duplicate payments, disputes
+                    </div>
+                    <div class="comparison-cell comparison-solution">
+                        Auto-generated payables
+                    </div>
+                </div>
+            </div>
+            
+            <p class="comparison-conclusion">
+                The spreadsheets are free. The chaos costs you lakhs every year.
+            </p>
+        </div>
+    </section>
+
+    <!-- Scalability -->
+    <section class="section section-alt" id="scale">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Built for Growth</p>
+                <h2 class="section-title">Scales With You,<br>Without Breaking What Works</h2>
+            </div>
+            
+            <div class="scale-grid">
+                <div class="scale-card">
+                    <div class="scale-icon">🏢</div>
+                    <h3>Multi-Branch Operations</h3>
+                    <p>
+                        Open your second office, third city, new country. 
+                        Same system, same visibility, controlled access per location.
+                    </p>
+                </div>
+                
+                <div class="scale-card">
+                    <div class="scale-icon">📈</div>
+                    <h3>Season-Ready</h3>
+                    <p>
+                        Ramp up 50 seasonal staff for peak months. 
+                        The system handles onboarding, assignments, and payroll without breaking.
+                    </p>
+                </div>
+                
+                <div class="scale-card">
+                    <div class="scale-icon">🔀</div>
+                    <h3>Multi-Product</h3>
+                    <p>
+                        Run treks, tours, activities, and rentals from one platform. 
+                        Each product type with its own workflow, same unified back-office.
+                    </p>
+                </div>
+                
+                <div class="scale-card">
+                    <div class="scale-icon">👥</div>
+                    <h3>Team Growth</h3>
+                    <p>
+                        From 5 to 50 to 500 team members. 
+                        Role-based access ensures everyone sees what they need, nothing more.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="scale-statement">
+                <p>
+                    Most travel companies hit a ceiling at 200-300 trips per year. 
+                    Not because of demand — because their operations can't scale.
+                </p>
+                <p class="scale-highlight">
+                    TravelOps is the infrastructure that lets you break through.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conversion Section -->
+    <section class="section section-dark" id="demo">
+        <div class="container">
+            <div class="conversion-content">
+                <h2 class="conversion-title">See How This Works<br>for Your Business</h2>
+                <p class="conversion-description">
+                    A 30-minute conversation with a product expert. 
+                    No sales pitch — we'll show you how your specific operations 
+                    would work inside TravelOps.
+                </p>
+                
+                <form class="demo-form" id="demoForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" required placeholder="Your travel company">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Work Email</label>
+                            <input type="email" id="email" name="email" required placeholder="you@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="trips">Trips per Year (Approx)</label>
+                            <select id="trips" name="trips">
+                                <option value="">Select range</option>
+                                <option value="50-100">50 - 100</option>
+                                <option value="100-300">100 - 300</option>
+                                <option value="300-500">300 - 500</option>
+                                <option value="500+">500+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="team">Team Size</label>
+                            <select id="team" name="team">
+                                <option value="">Select range</option>
+                                <option value="5-15">5 - 15</option>
+                                <option value="15-50">15 - 50</option>
+                                <option value="50-100">50 - 100</option>
+                                <option value="100+">100+</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group form-group-full">
+                        <label for="challenge">Biggest Operational Challenge Right Now</label>
+                        <textarea id="challenge" name="challenge" rows="3" placeholder="What's breaking in your operations?"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-lg btn-full">
+                        Request Demo
+                    </button>
+                    
+                    <p class="form-note">
+                        We'll respond within 24 hours. No automated sequences — a real person will reach out.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <svg class="footer-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 6L16 16L24 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="16" cy="16" r="3" fill="currentColor"/>
+                        </svg>
+                        <span>TravelOps</span>
+                    </a>
+                    <p class="footer-tagline">
+                        The Operating System for Travel Businesses
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Platform</h4>
+                        <a href="#pillars">CRM & Leads</a>
+                        <a href="#pillars">Booking Engine</a>
+                        <a href="#pillars">Inventory</a>
+                        <a href="#gear">Gear Management</a>
+                        <a href="#pillars">HRMS</a>
+                        <a href="#pillars">Vendors</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Blog</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="#">Documentation</a>
+                        <a href="#">API Reference</a>
+                        <a href="#">System Status</a>
+                        <a href="#">Security</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 TravelOps. Built for travel operators, by people who understand operations.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+---
+// Role-based dashboards section
+---
+
+<section class="py-20 lg:py-32 bg-gray-50" id="roles">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Header -->
+    <header class="text-center max-w-3xl mx-auto mb-16">
+      <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-4">
+        Built for Every Role
+      </p>
+      <h2 class="text-4xl lg:text-5xl font-extrabold text-primary mb-6">
+        The Right Information<br>for the Right Person
+      </h2>
+      <p class="text-lg text-gray-600">
+        Everyone sees what they need. No one drowns in data that isn't relevant to their work.
+      </p>
+    </header>
+    
+    <!-- Role Tabs -->
+    <div class="max-w-4xl mx-auto">
+      <div class="flex flex-wrap gap-2 justify-center p-2 bg-gray-100 rounded-lg mb-8" role="tablist">
+        <button class="role-tab flex items-center gap-2 px-4 py-3 bg-white shadow-sm rounded-md text-sm font-medium text-gray-900" role="tab" data-role="owner" aria-selected="true">
+          <span class="text-lg">👔</span>
+          <span>Owner / Founder</span>
+        </button>
+        <button class="role-tab flex items-center gap-2 px-4 py-3 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900" role="tab" data-role="sales" aria-selected="false">
+          <span class="text-lg">📞</span>
+          <span>Sales Team</span>
+        </button>
+        <button class="role-tab flex items-center gap-2 px-4 py-3 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900" role="tab" data-role="ops" aria-selected="false">
+          <span class="text-lg">⚙️</span>
+          <span>Operations</span>
+        </button>
+        <button class="role-tab flex items-center gap-2 px-4 py-3 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900" role="tab" data-role="finance" aria-selected="false">
+          <span class="text-lg">💹</span>
+          <span>Finance</span>
+        </button>
+        <button class="role-tab flex items-center gap-2 px-4 py-3 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900" role="tab" data-role="field" aria-selected="false">
+          <span class="text-lg">🏔️</span>
+          <span>Field Staff</span>
+        </button>
+      </div>
+      
+      <!-- Role Panels -->
+      <div class="roles-content">
+        <!-- Owner Panel -->
+        <div class="role-panel grid gap-8 lg:grid-cols-2 lg:gap-12 items-center" id="role-owner">
+          <div class="bg-gray-900 rounded-xl overflow-hidden p-6">
+            <div class="flex justify-between pb-4 border-b border-gray-700 mb-6 text-white font-semibold">
+              <span>Owner Dashboard</span>
+              <span class="text-gray-400 font-normal">December 2024</span>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div class="bg-white/5 rounded-md p-4">
+                <span class="text-2xl font-bold text-white block">₹42.5L</span>
+                <span class="text-xs text-gray-400">Revenue This Month</span>
+              </div>
+              <div class="bg-white/5 rounded-md p-4">
+                <span class="text-2xl font-bold text-white block">89%</span>
+                <span class="text-xs text-gray-400">Departure Fill Rate</span>
+              </div>
+              <div class="bg-white/5 rounded-md p-4">
+                <span class="text-2xl font-bold text-white block">23</span>
+                <span class="text-xs text-gray-400">Active Trips</span>
+              </div>
+              <div class="bg-white/5 rounded-md p-4">
+                <span class="text-2xl font-bold text-white block">94%</span>
+                <span class="text-xs text-gray-400">Staff Utilization</span>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3">
+              <div class="p-3 rounded-md text-sm text-white bg-yellow-500/20 border-l-4 border-yellow-500">
+                3 departures at capacity — consider adding dates
+              </div>
+              <div class="p-3 rounded-md text-sm text-white bg-blue-500/20 border-l-4 border-blue-500">
+                ₹8.2L pending vendor settlements this week
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-primary mb-4">See the health of your entire business at a glance</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Revenue trends. Booking velocity. Staff costs. Vendor payables. 
+              The numbers that matter for growth decisions — without digging through 12 reports.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Sales Panel -->
+        <div class="role-panel hidden grid gap-8 lg:grid-cols-2 lg:gap-12 items-center" id="role-sales">
+          <div class="bg-gray-900 rounded-xl overflow-hidden p-6">
+            <div class="flex justify-between pb-4 border-b border-gray-700 mb-6 text-white font-semibold">
+              <span>Sales Dashboard</span>
+              <span class="text-gray-400 font-normal">My Pipeline</span>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div class="bg-white/5 rounded-md p-4">
+                <span class="text-2xl font-bold text-white block">47</span>
+                <span class="text-xs text-gray-400">Active Leads</span>
+              </div>
+              <div class="bg-white/5 rounded-md p-4">
+                <span class="text-2xl font-bold text-white block">₹18.3L</span>
+                <span class="text-xs text-gray-400">Pipeline Value</span>
+              </div>
+              <div class="bg-white/5 rounded-md p-4">
+                <span class="text-2xl font-bold text-white block">8</span>
+                <span class="text-xs text-gray-400">Follow-ups Today</span>
+              </div>
+              <div class="bg-white/5 rounded-md p-4">
+                <span class="text-2xl font-bold text-white block">32%</span>
+                <span class="text-xs text-gray-400">Conversion Rate</span>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3">
+              <div class="p-3 rounded-md text-sm text-white bg-red-500/20 border-l-4 border-red-500">
+                2 hot leads waiting for quote &gt; 24 hours
+              </div>
+              <div class="p-3 rounded-md text-sm text-white bg-blue-500/20 border-l-4 border-blue-500">
+                5 leads ready for follow-up today
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-primary mb-4">Never let a lead go cold again</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Your leads, your pipeline, your follow-ups. See what needs attention today. 
+              Know exactly where every enquiry stands without checking WhatsApp history.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Ops Panel -->
+        <div class="role-panel hidden grid gap-8 lg:grid-cols-2 lg:gap-12 items-center" id="role-ops">
+          <div class="bg-gray-900 rounded-xl overflow-hidden p-6">
+            <div class="flex justify-between pb-4 border-b border-gray-700 mb-6 text-white font-semibold">
+              <span>Operations Dashboard</span>
+              <span class="text-gray-400 font-normal">This Week</span>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div class="bg-white/5 rounded-md p-4">
+                <span class="text-2xl font-bold text-white block">12</span>
+                <span class="text-xs text-gray-400">Departures This Week</span>
+              </div>
+              <div class="bg-white/5 rounded-md p-4">
+                <span class="text-2xl font-bold text-white block">156</span>
+                <span class="text-xs text-gray-400">Guests in Field</span>
+              </div>
+              <div class="bg-white/5 rounded-md p-4">
+                <span class="text-2xl font-bold text-white block">3</span>
+                <span class="text-xs text-gray-400">Pending Staff Assignments</span>
+              </div>
+              <div class="bg-white/5 rounded-md p-4">
+                <span class="text-2xl font-bold text-white block">98%</span>
+                <span class="text-xs text-gray-400">Gear Ready</span>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3">
+              <div class="p-3 rounded-md text-sm text-white bg-yellow-500/20 border-l-4 border-yellow-500">
+                Dec 18 departure needs cook assignment
+              </div>
+              <div class="p-3 rounded-md text-sm text-white bg-blue-500/20 border-l-4 border-blue-500">
+                4 gear items returning tomorrow
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-primary mb-4">Execution clarity for every trip</h3>
+            <p class="text-gray-600 leading-relaxed">
+              What's departing. Who's assigned. What gear is out. 
+              The operational picture that lets you catch problems before they become emergencies.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Finance Panel -->
+        <div class="role-panel hidden grid gap-8 lg:grid-cols-2 lg:gap-12 items-center" id="role-finance">
+          <div class="bg-gray-900 rounded-xl overflow-hidden p-6">
+            <div class="flex justify-between pb-4 border-b border-gray-700 mb-6 text-white font-semibold">
+              <span>Finance Dashboard</span>
+              <span class="text-gray-400 font-normal">December 2024</span>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div class="bg-white/5 rounded-md p-4">
+                <span class="text-2xl font-bold text-white block">₹12.8L</span>
+                <span class="text-xs text-gray-400">Pending Collections</span>
+              </div>
+              <div class="bg-white/5 rounded-md p-4">
+                <span class="text-2xl font-bold text-white block">₹8.2L</span>
+                <span class="text-xs text-gray-400">Vendor Payables</span>
+              </div>
+              <div class="bg-white/5 rounded-md p-4">
+                <span class="text-2xl font-bold text-white block">₹4.1L</span>
+                <span class="text-xs text-gray-400">Staff Payroll Due</span>
+              </div>
+              <div class="bg-white/5 rounded-md p-4">
+                <span class="text-2xl font-bold text-white block">28%</span>
+                <span class="text-xs text-gray-400">Avg. Trip Margin</span>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3">
+              <div class="p-3 rounded-md text-sm text-white bg-red-500/20 border-l-4 border-red-500">
+                3 bookings overdue for payment &gt; 7 days
+              </div>
+              <div class="p-3 rounded-md text-sm text-white bg-blue-500/20 border-l-4 border-blue-500">
+                Payroll processing due in 5 days
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-primary mb-4">Cash flow visibility without the chaos</h3>
+            <p class="text-gray-600 leading-relaxed">
+              What's coming in. What's going out. Who owes what. 
+              Vendor settlements, payroll status, and collection tracking in one place.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Field Panel -->
+        <div class="role-panel hidden grid gap-8 lg:grid-cols-2 lg:gap-12 items-center" id="role-field">
+          <div class="bg-gray-900 rounded-xl overflow-hidden p-6 max-w-xs mx-auto lg:mx-0">
+            <div class="flex justify-between pb-4 border-b border-gray-700 mb-6 text-white font-semibold">
+              <span>My Assignments</span>
+              <span class="text-gray-400 font-normal">Rajesh Kumar</span>
+            </div>
+            <div class="flex flex-col gap-4 mb-6">
+              <div class="bg-white/5 rounded-md p-4">
+                <div class="font-semibold text-white mb-2">EBC Trek — Dec 15-28</div>
+                <span class="inline-block px-2 py-1 bg-green-500/30 text-green-300 text-xs font-semibold rounded mb-2">In Progress</span>
+                <div class="text-sm text-gray-400">12 guests</div>
+              </div>
+              <div class="bg-white/5 rounded-md p-4">
+                <div class="font-semibold text-white mb-2">Annapurna Circuit — Jan 5-18</div>
+                <span class="inline-block px-2 py-1 bg-blue-500/30 text-blue-300 text-xs font-semibold rounded mb-2">Confirmed</span>
+                <div class="text-sm text-gray-400">8 guests</div>
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <button class="flex-1 py-3 bg-accent text-white rounded-md text-sm font-semibold">📍 Check In</button>
+              <button class="flex-1 py-3 bg-accent text-white rounded-md text-sm font-semibold">📝 Log Update</button>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-primary mb-4">Simple, mobile-first for the field</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Guides and drivers see their assignments. Check in from anywhere. 
+              Log updates. No complex interfaces — just what they need to do their job.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const roleTabs = document.querySelectorAll('.role-tab');
+  const rolePanels = document.querySelectorAll('.role-panel');
+  
+  roleTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const role = tab.dataset.role;
+      
+      // Update tabs
+      roleTabs.forEach(t => {
+        t.classList.remove('bg-white', 'shadow-sm', 'text-gray-900');
+        t.classList.add('text-gray-600');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('bg-white', 'shadow-sm', 'text-gray-900');
+      tab.classList.remove('text-gray-600');
+      tab.setAttribute('aria-selected', 'true');
+      
+      // Update panels
+      rolePanels.forEach(panel => {
+        panel.classList.add('hidden');
+      });
+      document.getElementById(`role-${role}`)?.classList.remove('hidden');
+    });
+  });
+</script>

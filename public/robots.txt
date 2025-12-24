@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://travelops.com/sitemap-index.xml
+
+# Crawl-delay (optional, for politeness)
+Crawl-delay: 1
+
+# Block common paths that shouldn't be indexed
+Disallow: /api/
+Disallow: /_astro/
+Disallow: /admin/

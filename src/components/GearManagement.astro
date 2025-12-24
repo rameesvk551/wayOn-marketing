@@ -1,0 +1,188 @@
+---
+// Gear Management deep dive section - signature differentiator
+---
+
+<section class="py-20 lg:py-32 bg-primary text-white" id="gear">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Header -->
+    <header class="text-center max-w-3xl mx-auto mb-16">
+      <p class="text-sm font-semibold uppercase tracking-wider text-accent-light mb-4">
+        What No Other ERP Does
+      </p>
+      <h2 class="text-4xl lg:text-5xl font-extrabold mb-4">
+        Gear Management That<br>Saves Money and Prevents Disasters
+      </h2>
+      <p class="text-lg text-gray-400 mt-4">
+        For adventure and trek operators, equipment isn't inventory — 
+        it's safety, reputation, and a massive hidden cost center. 
+        We built an entire module for this.
+      </p>
+    </header>
+    
+    <!-- Features -->
+    <div class="flex flex-col gap-16 mb-16">
+      <!-- Feature 1: Tracking -->
+      <div class="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
+        <div class="p-6 bg-white/5 border border-white/10 rounded-xl">
+          <div class="flex flex-col gap-3">
+            <div class="bg-white/10 rounded-md p-4">
+              <span class="inline-block px-2 py-1 bg-green-500/30 text-green-300 text-xs font-semibold rounded mb-2">Available</span>
+              <div class="font-semibold mb-2">4-Season Tent #TST-042</div>
+              <div class="flex flex-wrap gap-4 text-xs text-gray-400">
+                <span>Condition: Excellent</span>
+                <span>Warehouse: Kathmandu HQ</span>
+              </div>
+            </div>
+            
+            <div class="bg-white/10 rounded-md p-4">
+              <span class="inline-block px-2 py-1 bg-blue-500/30 text-blue-300 text-xs font-semibold rounded mb-2">On Trip</span>
+              <div class="font-semibold mb-2">Sleeping Bag -20°C #SLB-089</div>
+              <div class="flex flex-wrap gap-4 text-xs text-gray-400">
+                <span>Assigned: EBC Trek Dec 15</span>
+                <span>Return: Dec 28</span>
+              </div>
+            </div>
+            
+            <div class="bg-white/10 rounded-md p-4">
+              <span class="inline-block px-2 py-1 bg-yellow-500/30 text-yellow-300 text-xs font-semibold rounded mb-2">Maintenance</span>
+              <div class="font-semibold mb-2">Climbing Harness #CLH-023</div>
+              <div class="flex flex-wrap gap-4 text-xs text-gray-400">
+                <span>Issue: Buckle repair</span>
+                <span>Due: Dec 20</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Every Item, Tracked and Visible</h3>
+          <p class="text-gray-400 leading-relaxed">
+            Know the location, condition, and assignment status of every piece of equipment. 
+            From tents to carabiners, nothing gets lost in the chaos of back-to-back trips.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Feature 2: Assignments -->
+      <div class="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
+        <div class="lg:order-2 p-6 bg-white/5 border border-white/10 rounded-xl">
+          <div class="flex flex-wrap items-center justify-center gap-3">
+            <div class="flex flex-col items-center gap-2 p-3 bg-white/10 rounded-md">
+              <span class="text-xl">📋</span>
+              <span class="text-xs font-medium">Trip Created</span>
+            </div>
+            <span class="text-gray-500">→</span>
+            <div class="flex flex-col items-center gap-2 p-3 bg-white/10 rounded-md">
+              <span class="text-xl">⛺</span>
+              <span class="text-xs font-medium">Gear Assigned</span>
+            </div>
+            <span class="text-gray-500">→</span>
+            <div class="flex flex-col items-center gap-2 p-3 bg-white/10 rounded-md">
+              <span class="text-xl">✅</span>
+              <span class="text-xs font-medium">Checked Out</span>
+            </div>
+            <span class="text-gray-500">→</span>
+            <div class="flex flex-col items-center gap-2 p-3 bg-white/10 rounded-md">
+              <span class="text-xl">🔍</span>
+              <span class="text-xs font-medium">Returned & Inspected</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lg:order-1">
+          <h3 class="text-2xl font-bold mb-4">Trip-Based Assignments</h3>
+          <p class="text-gray-400 leading-relaxed">
+            Assign gear to specific departures. Track what went out, what came back, 
+            and in what condition. The system knows exactly which tent was on which trek.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Feature 3: Condition -->
+      <div class="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
+        <div class="p-6 bg-white/5 border border-white/10 rounded-xl">
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <div class="flex flex-col p-4 bg-white/10 rounded-md">
+              <span class="text-sm font-semibold text-green-400 mb-1">Excellent</span>
+              <span class="text-xs text-gray-400">42 items</span>
+            </div>
+            <div class="flex flex-col p-4 bg-white/10 rounded-md">
+              <span class="text-sm font-semibold text-blue-400 mb-1">Good</span>
+              <span class="text-xs text-gray-400">38 items</span>
+            </div>
+            <div class="flex flex-col p-4 bg-white/10 rounded-md">
+              <span class="text-sm font-semibold text-yellow-400 mb-1">Fair</span>
+              <span class="text-xs text-gray-400">21 items</span>
+            </div>
+            <div class="flex flex-col p-4 bg-white/10 rounded-md">
+              <span class="text-sm font-semibold text-orange-400 mb-1">Poor</span>
+              <span class="text-xs text-gray-400">8 items</span>
+            </div>
+            <div class="flex flex-col p-4 bg-red-500/10 border border-red-500/30 rounded-md sm:col-span-2">
+              <span class="text-sm font-semibold text-red-400 mb-1">Unsafe</span>
+              <span class="text-xs text-gray-400">2 items</span>
+              <span class="text-xs text-yellow-500 mt-2">⚠️ Action Required</span>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Condition Tracking & Safety Alerts</h3>
+          <p class="text-gray-400 leading-relaxed">
+            Rate equipment condition after every trip. Damaged items get flagged instantly. 
+            Unsafe gear triggers immediate alerts. 
+            Never send a guest up the mountain with compromised equipment.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Feature 4: Rentals -->
+      <div class="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
+        <div class="lg:order-2 p-6 bg-white/5 border border-white/10 rounded-xl flex justify-center">
+          <div class="bg-white/10 rounded-lg p-6 w-full max-w-xs">
+            <div class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Guest Rental</div>
+            <div class="text-lg font-bold mb-4">Sarah Mitchell</div>
+            <div class="flex flex-col gap-2 pb-4 border-b border-white/10 mb-4">
+              <span class="text-sm text-gray-400">Sleeping Bag × 1</span>
+              <span class="text-sm text-gray-400">Trekking Poles × 1</span>
+              <span class="text-sm text-gray-400">Down Jacket × 1</span>
+            </div>
+            <div class="flex justify-between text-sm mb-2">
+              <span class="text-gray-400">Rental Fee:</span>
+              <strong>₹2,400</strong>
+            </div>
+            <div class="flex justify-between text-sm">
+              <span class="text-gray-400">Security Deposit:</span>
+              <strong>₹5,000</strong>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lg:order-1">
+          <h3 class="text-2xl font-bold mb-4">Integrated Rental Management</h3>
+          <p class="text-gray-400 leading-relaxed">
+            Guests renting gear? Track agreements, calculate fees, manage deposits, 
+            and assess return condition — all linked to the booking. 
+            Turn your gear inventory into a revenue stream.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Impact Stats -->
+    <div class="grid gap-8 sm:grid-cols-3 text-center pt-12 border-t border-white/10">
+      <div class="flex flex-col gap-2">
+        <span class="text-4xl font-extrabold text-accent-light">₹5L+</span>
+        <span class="text-sm text-gray-400">Average annual gear loss prevented</span>
+      </div>
+      <div class="flex flex-col gap-2">
+        <span class="text-4xl font-extrabold text-accent-light">100%</span>
+        <span class="text-sm text-gray-400">Equipment accountability per trip</span>
+      </div>
+      <div class="flex flex-col gap-2">
+        <span class="text-4xl font-extrabold text-accent-light">Zero</span>
+        <span class="text-sm text-gray-400">Safety incidents from equipment failure</span>
+      </div>
+    </div>
+  </div>
+</section>
