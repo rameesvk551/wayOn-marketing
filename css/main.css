@@ -281,17 +281,16 @@ p {
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: var(--space-2);
-    font-size: var(--text-xl);
-    font-weight: 700;
     color: var(--color-primary);
 }
 
-.nav-logo-icon {
-    width: 32px;
+.nav-logo-img {
     height: 32px;
-    color: var(--color-accent);
+    width: auto;
+    display: block;
 }
+
+
 
 .nav-toggle {
     display: flex;
@@ -2148,17 +2147,13 @@ p {
 .footer-logo {
     display: flex;
     align-items: center;
-    gap: var(--space-2);
-    font-size: var(--text-xl);
-    font-weight: 700;
-    color: var(--color-white);
     margin-bottom: var(--space-4);
 }
 
-.footer-logo-icon {
-    width: 32px;
+.footer-logo-img {
     height: 32px;
-    color: var(--color-accent-light);
+    width: auto;
+    display: block;
 }
 
 .footer-tagline {
