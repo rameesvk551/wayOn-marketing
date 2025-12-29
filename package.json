@@ -1,8 +1,8 @@
 {
-  "name": "travelops-website",
+  "name": "wayon-travel-solutions-website",
   "type": "module",
   "version": "1.0.0",
-  "description": "TravelOps - The Operating System for Travel Businesses",
+  "description": "Wayon Travel Solutions - The Operating System for Travel Businesses",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

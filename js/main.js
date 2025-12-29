@@ -1,5 +1,5 @@
 /**
- * TravelOps Static Marketing Website
+ * Wayon Travel Solutions Static Marketing Website
  * JavaScript for interactions, animations, and functionality
  */
 
@@ -429,7 +429,7 @@
 
         // Save to localStorage
         if (saveToStorage) {
-            localStorage.setItem('travelops_business_type', type);
+            localStorage.setItem('wayon_business_type', type);
         }
 
         console.log(`Business type set to: ${config.name}`);
@@ -471,7 +471,7 @@
     // Show/hide floating indicator based on scroll position
     function updateIndicatorVisibility() {
         if (businessIndicator) {
-            const savedType = localStorage.getItem('travelops_business_type');
+            const savedType = localStorage.getItem('wayon_business_type');
 
             // Show indicator when scrolled down AND a type has been selected
             if (window.scrollY > 200 && savedType) {
@@ -491,7 +491,7 @@
     }, { passive: true });
 
     // Restore saved business type on page load
-    const savedBusinessType = localStorage.getItem('travelops_business_type');
+    const savedBusinessType = localStorage.getItem('wayon_business_type');
     if (savedBusinessType && businessCategories[savedBusinessType]) {
         setBusinessType(savedBusinessType, false);
     }
@@ -505,6 +505,6 @@
     updateIndicatorVisibility();
 
     // Log initialization
-    console.log('TravelOps website initialized');
+    console.log('Wayon Travel Solutions website initialized');
 
 })();
