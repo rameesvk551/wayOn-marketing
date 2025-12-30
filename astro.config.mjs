@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://wayontravelsolutions.io',
+  site: 'https://wayontravelservices.io',
   integrations: [
     tailwind(),
     sitemap({
