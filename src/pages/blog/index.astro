@@ -1,0 +1,229 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const title = 'Travel Technology Blog | Wayon';
+const description = 'Explore insights, tips, and best practices for travel agencies, TMCs, and tour operators. Learn how to streamline operations with B2B travel technology.';
+
+// Blog posts data
+const blogPosts = [
+  {
+    slug: 'what-is-b2b-travel-software',
+    title: 'What is B2B Travel Software? Complete Guide for 2025',
+    description: 'Discover what B2B travel software is, how it works, and why travel agencies need it to compete in the modern travel industry.',
+    category: 'Travel Technology',
+    date: '2025-01-15',
+    readTime: '8 min',
+    featured: true
+  },
+  {
+    slug: 'travel-agency-crm-guide',
+    title: 'Travel Agency CRM: Why You Need One and How to Choose',
+    description: 'Learn how a specialized travel CRM helps agencies manage leads, track customer journeys, and close more bookings.',
+    category: 'CRM & Sales',
+    date: '2025-01-12',
+    readTime: '7 min',
+    featured: true
+  },
+  {
+    slug: 'streamline-travel-booking-operations',
+    title: '10 Ways to Streamline Your Travel Booking Operations',
+    description: 'Practical tips to reduce manual work, eliminate errors, and process bookings faster in your travel business.',
+    category: 'Operations',
+    date: '2025-01-10',
+    readTime: '6 min',
+    featured: false
+  },
+  {
+    slug: 'travel-inventory-management-best-practices',
+    title: 'Travel Inventory Management: Best Practices for Tour Operators',
+    description: 'Master seat allocation, departure management, and prevent overbookings with smart inventory strategies.',
+    category: 'Inventory',
+    date: '2025-01-08',
+    readTime: '7 min',
+    featured: false
+  },
+  {
+    slug: 'ai-in-travel-industry',
+    title: 'How AI is Revolutionizing the Travel Industry in 2025',
+    description: 'Explore how artificial intelligence is transforming travel operations, from pricing to customer service.',
+    category: 'AI & Innovation',
+    date: '2025-01-05',
+    readTime: '9 min',
+    featured: true
+  },
+  {
+    slug: 'corporate-travel-management-software',
+    title: 'Corporate Travel Management Software: A Complete Buyer\'s Guide',
+    description: 'Everything you need to know about selecting the right TMC software for corporate travel management.',
+    category: 'Corporate Travel',
+    date: '2025-01-03',
+    readTime: '10 min',
+    featured: false
+  },
+  {
+    slug: 'travel-agent-automation-tools',
+    title: '7 Automation Tools Every Travel Agent Needs in 2025',
+    description: 'Discover the essential automation tools that help travel agents save time and grow their business.',
+    category: 'Automation',
+    date: '2024-12-28',
+    readTime: '6 min',
+    featured: false
+  },
+  {
+    slug: 'gear-management-adventure-travel',
+    title: 'Gear Management for Adventure Travel Companies: Stop Losing Money',
+    description: 'Learn how to track, maintain, and optimize your adventure gear inventory to prevent costly losses.',
+    category: 'Adventure Travel',
+    date: '2024-12-25',
+    readTime: '8 min',
+    featured: false
+  },
+  {
+    slug: 'multi-supplier-integration-travel',
+    title: 'Multi-Supplier Integration: Connecting Your Travel Tech Stack',
+    description: 'How to integrate multiple suppliers, GDS systems, and APIs into a unified travel platform.',
+    category: 'Integration',
+    date: '2024-12-22',
+    readTime: '7 min',
+    featured: false
+  },
+  {
+    slug: 'scaling-travel-agency-business',
+    title: 'Scaling Your Travel Agency: From 50 to 5000 Bookings Per Year',
+    description: 'Strategic insights on growing your travel business without proportionally increasing overhead costs.',
+    category: 'Business Growth',
+    date: '2024-12-20',
+    readTime: '9 min',
+    featured: false
+  }
+];
+
+const featuredPosts = blogPosts.filter(post => post.featured);
+const regularPosts = blogPosts.filter(post => !post.featured);
+
+function formatDate(dateString: string) {
+  return new Date(dateString).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+}
+---
+
+<BaseLayout title={title} description={description}>
+  <Header />
+  
+  <main class="pt-24 pb-16">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-indigo-50 via-white to-purple-50 py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto">
+          <span class="inline-block px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium mb-6">
+            Travel Technology Insights
+          </span>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6">
+            The Wayon Blog
+          </h1>
+          <p class="text-xl text-slate-600 leading-relaxed">
+            Expert insights, industry trends, and practical guides to help you 
+            build and scale a successful travel business.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Featured Posts -->
+    <section class="max-w-7xl mx-auto px-6 -mt-8">
+      <div class="grid lg:grid-cols-3 gap-6">
+        {featuredPosts.map((post, index) => (
+          <a href={`/blog/${post.slug}`} 
+             class={`group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ${index === 0 ? 'lg:col-span-2 lg:row-span-2' : ''}`}>
+            <div class={`bg-gradient-to-br from-indigo-600 to-purple-700 ${index === 0 ? 'p-8 lg:p-12 min-h-[400px]' : 'p-6 min-h-[200px]'} flex flex-col justify-end`}>
+              <span class="inline-block px-3 py-1 bg-white/20 text-white rounded-full text-sm font-medium mb-4 w-fit">
+                {post.category}
+              </span>
+              <h2 class={`font-bold text-white mb-3 group-hover:underline ${index === 0 ? 'text-2xl lg:text-3xl' : 'text-xl'}`}>
+                {post.title}
+              </h2>
+              <p class={`text-indigo-100 mb-4 ${index === 0 ? 'text-base lg:text-lg' : 'text-sm line-clamp-2'}`}>
+                {post.description}
+              </p>
+              <div class="flex items-center gap-3 text-sm text-indigo-200">
+                <time datetime={post.date}>{formatDate(post.date)}</time>
+                <span>•</span>
+                <span>{post.readTime} read</span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+    
+    <!-- All Posts -->
+    <section class="max-w-7xl mx-auto px-6 mt-16">
+      <h2 class="text-2xl font-bold text-slate-900 mb-8">Latest Articles</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {regularPosts.map(post => (
+          <article class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:shadow-lg hover:border-indigo-200 transition-all duration-300">
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium">
+                  {post.category}
+                </span>
+                <span class="text-xs text-slate-400">{post.readTime}</span>
+              </div>
+              <a href={`/blog/${post.slug}`}>
+                <h3 class="text-lg font-bold text-slate-900 mb-3 group-hover:text-indigo-600 transition-colors line-clamp-2">
+                  {post.title}
+                </h3>
+              </a>
+              <p class="text-slate-600 text-sm mb-4 line-clamp-3">
+                {post.description}
+              </p>
+              <div class="flex items-center justify-between">
+                <time datetime={post.date} class="text-xs text-slate-400">
+                  {formatDate(post.date)}
+                </time>
+                <a href={`/blog/${post.slug}`} class="text-indigo-600 text-sm font-medium hover:underline">
+                  Read more →
+                </a>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+    
+    <!-- Newsletter CTA -->
+    <section class="max-w-7xl mx-auto px-6 mt-20">
+      <div class="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-8 lg:p-12">
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 class="text-2xl lg:text-3xl font-bold text-white mb-4">
+              Stay Updated with Travel Tech Trends
+            </h2>
+            <p class="text-slate-300">
+              Get the latest insights on travel technology, industry trends, and 
+              tips to grow your travel business delivered to your inbox.
+            </p>
+          </div>
+          <form class="flex flex-col sm:flex-row gap-4">
+            <input 
+              type="email" 
+              placeholder="Enter your email" 
+              class="flex-1 px-6 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              required
+            />
+            <button type="submit" class="px-8 py-4 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition-colors whitespace-nowrap">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</BaseLayout>

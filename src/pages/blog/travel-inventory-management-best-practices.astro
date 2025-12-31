@@ -1,0 +1,209 @@
+---
+import BlogLayout from '../../layouts/BlogLayout.astro';
+
+const title = 'Travel Inventory Management: Best Practices for Tour Operators';
+const description = 'Master seat allocation, departure management, and prevent overbookings with smart inventory strategies.';
+const publishDate = '2025-01-08';
+const author = 'Wayon Team';
+const category = 'Inventory';
+const readTime = '7 min';
+const keywords = ['travel inventory management', 'tour operator software', 'seat allocation', 'departure management', 'overbooking prevention', 'travel availability'];
+---
+
+<BlogLayout 
+  title={title}
+  description={description}
+  publishDate={publishDate}
+  author={author}
+  category={category}
+  readTime={readTime}
+  keywords={keywords}
+>
+  <p>
+    "How many seats are left on the December 15th departure?" In many tour operations, 
+    answering this simple question requires checking multiple spreadsheets, calling the 
+    operations manager, and hoping the information is up to date.
+  </p>
+  
+  <p>
+    Poor inventory management leads to overbookings, lost sales, and operational chaos. 
+    Here's how to master travel inventory management and run your departures smoothly.
+  </p>
+
+  <h2>Understanding Travel Inventory</h2>
+  
+  <p>
+    Travel inventory is fundamentally different from retail inventory. You're not stocking 
+    physical products—you're managing time-limited availability:
+  </p>
+  
+  <ul>
+    <li><strong>Perishable:</strong> An empty seat on today's departure is lost forever</li>
+    <li><strong>Variable:</strong> The same trip may have different capacity based on vehicle, accommodation, or guide availability</li>
+    <li><strong>Interconnected:</strong> A hotel room, guide, vehicle, and activity slot must all be available simultaneously</li>
+    <li><strong>Dynamic:</strong> Availability changes constantly as bookings come in and cancellations occur</li>
+  </ul>
+
+  <h2>Common Inventory Management Problems</h2>
+
+  <h3>1. Overbooking</h3>
+  <p>
+    When sales and operations aren't synchronized, you end up with more confirmed bookings 
+    than available capacity. This leads to uncomfortable customer conversations, refunds, 
+    and reputation damage.
+  </p>
+
+  <h3>2. Underselling</h3>
+  <p>
+    Conversely, you might block inventory unnecessarily or fail to release holds when 
+    customers don't confirm. Meanwhile, you turn away customers who wanted to book.
+  </p>
+
+  <h3>3. Visibility Gaps</h3>
+  <p>
+    When inventory data lives in spreadsheets that only one person updates, your sales 
+    team is always working with outdated information.
+  </p>
+
+  <h3>4. Manual Updates</h3>
+  <p>
+    Every booking requires manual updates to availability. When you're busy, updates get 
+    delayed, creating accuracy issues.
+  </p>
+
+  <h2>Best Practices for Travel Inventory Management</h2>
+
+  <h3>1. Centralize Your Inventory System</h3>
+  <p>
+    All inventory data—departures, capacity, current bookings, holds—should live in a single 
+    system that everyone can access. This eliminates the "let me check with operations" delay 
+    and ensures everyone works with the same information.
+  </p>
+
+  <h3>2. Implement Real-Time Updates</h3>
+  <p>
+    When a booking is confirmed, inventory should update automatically. When a cancellation 
+    occurs, that capacity should immediately become available. No manual intervention required.
+  </p>
+
+  <h3>3. Use Hold Management</h3>
+  <p>
+    When a customer is interested but hasn't paid, you need a way to temporarily reserve 
+    their spot without permanently blocking inventory. Implement a hold system with:
+  </p>
+  <ul>
+    <li>Automatic hold expiration after a defined period</li>
+    <li>Visibility into all current holds</li>
+    <li>Easy conversion from hold to confirmed booking</li>
+    <li>Alerts when holds are about to expire</li>
+  </ul>
+
+  <h3>4. Set Up Availability Alerts</h3>
+  <p>
+    Configure alerts for key inventory thresholds:
+  </p>
+  <ul>
+    <li><strong>Low availability:</strong> When a departure drops below 20% capacity remaining</li>
+    <li><strong>Sold out:</strong> Immediately know when departures are full</li>
+    <li><strong>Cancellation:</strong> Alert sales when spots open up on popular departures</li>
+  </ul>
+
+  <h3>5. Manage Waitlists</h3>
+  <p>
+    When departures sell out, capture interested customers on a waitlist. When cancellations 
+    occur, automatically notify waitlisted customers in order.
+  </p>
+
+  <h3>6. Track Component Availability</h3>
+  <p>
+    A departure's capacity isn't just about seats—it's about all the components working 
+    together. Track:
+  </p>
+  <ul>
+    <li>Accommodation capacity (hotel rooms, camps, homestays)</li>
+    <li>Vehicle capacity (buses, jeeps, flights)</li>
+    <li>Guide and staff availability</li>
+    <li>Activity slot limits</li>
+    <li>Equipment availability (for adventure tours)</li>
+  </ul>
+
+  <h3>7. Plan for Seasonality</h3>
+  <p>
+    Travel demand is highly seasonal. Your inventory management should help you:
+  </p>
+  <ul>
+    <li>Add departures during peak seasons</li>
+    <li>Reduce capacity during slow periods</li>
+    <li>Track year-over-year patterns</li>
+    <li>Forecast demand for planning</li>
+  </ul>
+
+  <h3>8. Handle Group Bookings Carefully</h3>
+  <p>
+    Group bookings require special inventory handling. A group inquiry for 15 seats 
+    shouldn't immediately block those seats (the conversion rate is low), but you need 
+    to track the potential impact on availability.
+  </p>
+
+  <h2>Departure Management Workflows</h2>
+
+  <blockquote>
+    "The difference between a smooth departure and a chaotic one often comes down to 
+    how well inventory was managed in the weeks before travel."
+  </blockquote>
+
+  <h3>Pre-Departure Checklist</h3>
+  <p>
+    Build a standardized checklist that triggers based on time before departure:
+  </p>
+  <ul>
+    <li><strong>30 days before:</strong> Final capacity check, decide to proceed or cancel</li>
+    <li><strong>14 days before:</strong> Finalize supplier bookings based on actual numbers</li>
+    <li><strong>7 days before:</strong> Generate rooming lists, vehicle manifests, activity rosters</li>
+    <li><strong>3 days before:</strong> Final confirmation to all suppliers and customers</li>
+    <li><strong>Day of:</strong> Emergency contact list, departure briefing</li>
+  </ul>
+
+  <h3>Minimum Viable Departures</h3>
+  <p>
+    Define minimum booking thresholds for each departure type. If bookings don't reach 
+    this threshold by a cutoff date, you can cancel the departure, combine with another 
+    date, or proceed with adjusted operations.
+  </p>
+
+  <h2>How Wayon Handles Inventory Management</h2>
+  
+  <p>
+    Wayon's inventory module was built specifically for tour operators who need more than 
+    a spreadsheet but less than an enterprise system:
+  </p>
+  
+  <ul>
+    <li><strong>Real-time availability:</strong> See exactly what's available across all departures</li>
+    <li><strong>Automatic updates:</strong> Bookings and cancellations instantly reflect in inventory</li>
+    <li><strong>Hold management:</strong> Temporary holds with auto-expiration and conversion</li>
+    <li><strong>Overbooking prevention:</strong> System blocks sales when capacity is reached</li>
+    <li><strong>Waitlist automation:</strong> Capture and notify waitlisted customers</li>
+    <li><strong>Component tracking:</strong> Manage all the pieces that make up a departure</li>
+    <li><strong>Departure status:</strong> Track confirmed, tentative, and cancelled departures</li>
+  </ul>
+
+  <h2>Measuring Inventory Performance</h2>
+  
+  <p>
+    Track these metrics to evaluate your inventory management:
+  </p>
+  <ul>
+    <li><strong>Occupancy rate:</strong> Average percentage of capacity filled per departure</li>
+    <li><strong>Booking velocity:</strong> How quickly departures fill up</li>
+    <li><strong>Overbooking incidents:</strong> Should be zero!</li>
+    <li><strong>Hold conversion rate:</strong> Percentage of holds that become bookings</li>
+    <li><strong>Cancellation impact:</strong> Capacity lost to cancellations vs. resold</li>
+  </ul>
+  
+  <p>
+    Effective inventory management is the foundation of profitable tour operations. 
+    With the right systems and practices, you'll maximize revenue, minimize problems, 
+    and deliver consistent customer experiences.
+  </p>
+</BlogLayout>
