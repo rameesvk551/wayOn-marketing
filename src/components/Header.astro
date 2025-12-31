@@ -2,11 +2,16 @@
 // Header component with navigation
 ---
 
-<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 transition-all" id="nav">
+<!-- Trade Name Banner -->
+<div class="fixed top-0 left-0 right-0 z-50 bg-gray-900 text-gray-300 text-xs py-1.5 text-center">
+  <span>wayon – Trade name of MUHAMMED RAMEES V K (Proprietorship, GSTIN: 32CZVPV3486M1Z8)</span>
+</div>
+
+<nav class="fixed top-7 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 transition-all" id="nav">
   <div class="max-w-6xl mx-auto px-6 flex items-center justify-between py-4">
     <!-- Logo -->
     <a href="/" class="flex items-center gap-3 text-xl font-bold text-primary overflow-hidden" style="height: 40px;">
-      <img src="/logo.png" alt="Wayon" style="height: 150px; width: auto; margin-top: -55px; margin-bottom: -55px;" />
+      <img src="/logo.png" alt="wayon" style="height: 150px; width: auto; margin-top: -55px; margin-bottom: -55px;" />
       <span class="hidden lg:inline text-xs font-normal text-gray-500 border-l border-gray-300 pl-3">A Travel Technology Platform</span>
     </a>
     
@@ -30,7 +35,7 @@
   </div>
   
   <!-- Mobile Menu -->
-  <div class="md:hidden hidden fixed top-16 left-0 right-0 bottom-0 bg-white p-8 flex flex-col gap-6" id="mobileMenu">
+  <div class="md:hidden hidden fixed top-[calc(1.75rem+4rem)] left-0 right-0 bottom-0 bg-white p-8 flex flex-col gap-6" id="mobileMenu">
     <a href="#platform" class="text-lg font-medium text-gray-700">Platform</a>
     <a href="#pillars" class="text-lg font-medium text-gray-700">Modules</a>
     <a href="#gear" class="text-lg font-medium text-gray-700">Gear Management</a>

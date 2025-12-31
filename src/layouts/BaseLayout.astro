@@ -15,7 +15,7 @@ const {
   ogImage = '/og-image.png'
 } = Astro.props;
 
-const siteName = 'Wayon';
+const siteName = 'wayon';
 const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
 ---
 
@@ -29,7 +29,7 @@ const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
   <title>{fullTitle}</title>
   <meta name="title" content={fullTitle} />
   <meta name="description" content={description} />
-  <meta name="author" content="Wayon" />
+  <meta name="author" content="wayon - MUHAMMED RAMEES V K" />
   <meta name="robots" content="index, follow" />
   
   <!-- Canonical -->
@@ -65,20 +65,27 @@ const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "Wayon",
+      "name": "wayon",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
-      "description": "The Operating System for Travel Businesses - Manage leads, bookings, inventory, staff, vendors, gear & finances in one platform.",
+      "description": "wayon is a travel technology platform. The Operating System for Travel Businesses - Manage leads, bookings, inventory, staff, vendors, gear & finances in one platform.",
+      "author": {
+        "@type": "Organization",
+        "name": "wayon - MUHAMMED RAMEES V K",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kozhikode",
+          "addressRegion": "Kerala",
+          "addressCountry": "IN"
+        },
+        "telephone": "+919605734995",
+        "email": "rameesvk551@gmail.com"
+      },
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD",
         "availability": "https://schema.org/OnlineOnly"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "150"
       }
     }
   </script>
