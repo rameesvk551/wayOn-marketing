@@ -2,7 +2,7 @@
   "name": "wayon-travel-services-website",
   "type": "module",
   "version": "0.0.1",
-  "description": "Wayon Travel Services - The Operating System for Travel Businesses",
+  "description": "Wayon - The Operating System for Travel Businesses",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

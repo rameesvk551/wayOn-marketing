@@ -15,7 +15,7 @@ const {
   ogImage = '/og-image.png'
 } = Astro.props;
 
-const siteName = 'Wayon Travel Services';
+const siteName = 'Wayon';
 const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
 ---
 
@@ -29,7 +29,7 @@ const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
   <title>{fullTitle}</title>
   <meta name="title" content={fullTitle} />
   <meta name="description" content={description} />
-  <meta name="author" content="Wayon Travel Services" />
+  <meta name="author" content="Wayon" />
   <meta name="robots" content="index, follow" />
   
   <!-- Canonical -->
@@ -65,7 +65,7 @@ const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "Wayon Travel Services",
+      "name": "Wayon",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
       "description": "The Operating System for Travel Businesses - Manage leads, bookings, inventory, staff, vendors, gear & finances in one platform.",
