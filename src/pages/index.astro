@@ -1,7 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro';
+import B2BHero from '../components/B2BHero.astro';
+import WhyChoosePortal from '../components/WhyChoosePortal.astro';
+import AIPoweredSolutions from '../components/AIPoweredSolutions.astro';
+import PurposeBuilt from '../components/PurposeBuilt.astro';
+import CorporateTravelTool from '../components/CorporateTravelTool.astro';
+import CorporateBookingHero from '../components/CorporateBookingHero.astro';
 import ChaosProblem from '../components/ChaosProblem.astro';
 import PlatformConcept from '../components/PlatformConcept.astro';
 import CorePillars from '../components/CorePillars.astro';
@@ -13,15 +18,33 @@ import Scalability from '../components/Scalability.astro';
 import DemoForm from '../components/DemoForm.astro';
 import Footer from '../components/Footer.astro';
 
-const title = 'wayon – A Travel Technology Platform | The Operating System for Travel Businesses';
-const description = 'wayon is a travel technology platform by MUHAMMED RAMEES V K. One platform to manage your tours, team, leads, gear, and finances. Built for tour operators, trek companies, and adventure businesses.';
+const title = 'Wayon – B2B Travel Solutions | The Operating System for Travel Businesses';
+const description = 'Wayon is a B2B travel technology platform. One platform to manage your agents, bookings, inventory, and finances. Built for travel agencies, TMCs, and corporate travel management.';
 ---
 
 <BaseLayout title={title} description={description}>
   <Header />
   
   <main>
-    <Hero />
+    <!-- B2B Travel Solutions Hero Section -->
+    <B2BHero />
+    
+    <!-- Why Choose B2B Portal - Hub & Spoke Diagram -->
+    <WhyChoosePortal />
+    
+    <!-- AI-Powered Solutions - Key Benefits Features -->
+    <AIPoweredSolutions />
+    
+    <!-- Purpose Built. Performance Driven. Partner-Focused. -->
+    <PurposeBuilt />
+    
+    <!-- Corporate Travel Tool - TMCs vs Corporates Dashboards -->
+    <CorporateTravelTool />
+    
+    <!-- Corporate Travel Booking Software Hero -->
+    <CorporateBookingHero />
+    
+    <!-- Platform Foundation Sections -->
     <ChaosProblem />
     <PlatformConcept />
     <CorePillars />
