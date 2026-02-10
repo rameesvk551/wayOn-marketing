@@ -2563,3 +2563,305 @@ p {
         display: none;
     }
 }
+
+
+/* ========================================================================
+   POLICY PAGES (Privacy Policy, Terms of Service, Data Deletion)
+   ======================================================================== */
+
+.policy-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+}
+
+/* Policy Nav */
+.policy-nav {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-fixed);
+    background-color: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-gray-200);
+    padding: var(--space-4) 0;
+}
+
+.policy-nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.policy-back {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-accent);
+    transition: color var(--transition-fast);
+}
+
+.policy-back:hover {
+    color: var(--color-accent-dark);
+}
+
+.policy-back svg {
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+/* Policy Content */
+.policy-content {
+    flex: 1;
+    padding: var(--space-12) 0 var(--space-20);
+}
+
+.policy-content .container {
+    max-width: var(--container-narrow);
+}
+
+.policy-content h1 {
+    font-size: var(--text-4xl);
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: var(--space-3);
+}
+
+.policy-date {
+    font-size: var(--text-sm);
+    color: var(--color-gray-500);
+    margin-bottom: var(--space-12);
+    padding-bottom: var(--space-6);
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+.policy-content section {
+    margin-bottom: var(--space-10);
+}
+
+.policy-content h2 {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: var(--space-4);
+    padding-bottom: var(--space-2);
+    border-bottom: 2px solid var(--color-gray-100);
+}
+
+.policy-content h3 {
+    font-size: var(--text-lg);
+    font-weight: 600;
+    color: var(--color-gray-800);
+    margin-top: var(--space-6);
+    margin-bottom: var(--space-3);
+}
+
+.policy-content p {
+    font-size: var(--text-base);
+    color: var(--color-gray-700);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-4);
+    max-width: none;
+}
+
+.policy-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: var(--space-4);
+}
+
+.policy-content ul li {
+    position: relative;
+    padding-left: var(--space-6);
+    margin-bottom: var(--space-3);
+    font-size: var(--text-base);
+    color: var(--color-gray-700);
+    line-height: var(--leading-relaxed);
+}
+
+.policy-content ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+}
+
+.policy-content a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color var(--transition-fast);
+}
+
+.policy-content a:hover {
+    color: var(--color-accent-dark);
+}
+
+/* Policy Contact Box */
+.policy-contact {
+    background-color: var(--color-gray-50);
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    margin: var(--space-4) 0;
+}
+
+.policy-contact p {
+    margin-bottom: var(--space-2);
+}
+
+.policy-contact p:last-child {
+    margin-bottom: 0;
+}
+
+/* Data Deletion Steps */
+.deletion-steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    margin: var(--space-6) 0;
+}
+
+.deletion-step {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-4);
+    padding: var(--space-5);
+    background-color: var(--color-gray-50);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-gray-200);
+    transition: border-color var(--transition-fast);
+}
+
+.deletion-step:hover {
+    border-color: var(--color-accent-light);
+}
+
+.step-number {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border-radius: 50%;
+    font-size: var(--text-sm);
+    font-weight: 700;
+}
+
+.step-content p {
+    margin-bottom: 0;
+}
+
+/* Deletion Email CTA */
+.deletion-email {
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.05), rgba(99, 102, 241, 0.08));
+    border-color: var(--color-accent-light);
+}
+
+/* Deletion Timeline */
+.deletion-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    margin: var(--space-6) 0;
+    padding-left: var(--space-6);
+    border-left: 3px solid var(--color-gray-200);
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-4);
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--space-6) - 7px);
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    border: 2px solid var(--color-white);
+    box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+.timeline-icon {
+    font-size: var(--text-xl);
+    flex-shrink: 0;
+}
+
+.timeline-content h3 {
+    font-size: var(--text-base);
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-top: 0;
+    margin-bottom: var(--space-1);
+}
+
+.timeline-content p {
+    font-size: var(--text-sm);
+    margin-bottom: 0;
+}
+
+/* Policy Footer */
+.policy-footer {
+    background-color: var(--color-primary);
+    color: var(--color-gray-400);
+    padding: var(--space-8) 0;
+    margin-top: auto;
+}
+
+.policy-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+    text-align: center;
+}
+
+.policy-footer p {
+    font-size: var(--text-sm);
+    max-width: none;
+}
+
+.policy-footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-6);
+    justify-content: center;
+}
+
+.policy-footer-links a {
+    font-size: var(--text-sm);
+    color: var(--color-gray-400);
+    transition: color var(--transition-fast);
+    text-decoration: none;
+}
+
+.policy-footer-links a:hover {
+    color: var(--color-white);
+}
+
+/* Policy Pages Responsive */
+@media (min-width: 768px) {
+    .policy-content h1 {
+        font-size: var(--text-5xl);
+    }
+
+    .policy-footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
