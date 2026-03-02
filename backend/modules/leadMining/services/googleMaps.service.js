@@ -32,6 +32,15 @@ const scrapeGoogleMaps = async ({ keyword, location, jobId }) => {
   return parseGoogleMapsResults(html, keyword, location, jobId);
 };
 
+const isGoogleUrl = (url) => {
+  try {
+    const { hostname } = new URL(url);
+    return hostname === 'google.com' || hostname.endsWith('.google.com');
+  } catch {
+    return false;
+  }
+};
+
 const parseGoogleMapsResults = (html, keyword, location, jobId) => {
   const $ = cheerio.load(html);
   const leads = [];
@@ -48,7 +57,7 @@ const parseGoogleMapsResults = (html, keyword, location, jobId) => {
         name,
         phones: phone ? [phone] : [],
         emails: [],
-        website: website && !website.includes('google.com') ? website : null,
+        website: website && !isGoogleUrl(website) ? website : null,
         address,
       };
       leads.push(normalizeLead(raw, 'google_maps', keyword, location, jobId));
