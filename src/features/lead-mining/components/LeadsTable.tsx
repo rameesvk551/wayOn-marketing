@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Lead } from '../types';
+import { truncate } from '../utils';
 
 interface LeadsTableProps {
   leads: Lead[];
@@ -47,7 +48,7 @@ export const LeadsTable: React.FC<LeadsTableProps> = ({ leads, loading = false }
               <td className="px-4 py-3">
                 {lead.website ? (
                   <a href={lead.website} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                    {lead.website.replace(/^https?:\/\//, '').slice(0, 30)}
+                    {truncate(lead.website.replace(/^https?:\/\//, ''), 30)}
                   </a>
                 ) : '—'}
               </td>

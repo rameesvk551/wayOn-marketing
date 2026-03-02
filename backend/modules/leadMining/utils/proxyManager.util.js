@@ -1,10 +1,17 @@
 const getProxies = () => {
   const raw = process.env.PROXY_LIST || '';
   if (!raw) return [];
-  return raw.split(',').map((entry) => {
-    const [host, port, user, pass] = entry.split(':');
-    return { host, port: parseInt(port, 10), auth: user && pass ? `${user}:${pass}` : null };
-  });
+  return raw
+    .split(',')
+    .map((entry) => entry.trim())
+    .filter((entry) => {
+      const parts = entry.split(':');
+      return parts.length === 2 || parts.length === 4;
+    })
+    .map((entry) => {
+      const [host, port, user, pass] = entry.split(':');
+      return { host, port: parseInt(port, 10), auth: user && pass ? `${user}:${pass}` : null };
+    });
 };
 
 let currentIndex = 0;
