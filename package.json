@@ -11,9 +11,12 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^4.4.2",
     "@astrojs/sitemap": "^3.0.0",
     "@astrojs/tailwind": "^5.0.0",
-    "astro": "^4.0.0"
+    "astro": "^4.0.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
